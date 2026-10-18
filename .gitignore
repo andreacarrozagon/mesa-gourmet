@@ -1,0 +1,14 @@
+# Configuración local de la base de datos
+conexion.php
+
+# Archivos del editor y del sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos temporales y registros de errores
+*.log
+*.tmp
+
+# Prueba local de conexión
+probar_conexion.php

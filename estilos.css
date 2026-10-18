@@ -1,0 +1,203 @@
+/* Colores principales */
+:root {
+  --vino: #652c3e;
+  --vino-oscuro: #48202d;
+  --crema: #faf7f2;
+  --texto: #292522;
+}
+
+/* Estructura general */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--crema);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+  color: var(--vino);
+}
+
+/* Encabezado y navegación */
+.encabezado {
+  padding: 24px 0;
+  background-color: var(--vino);
+  color: white;
+}
+
+.marca {
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.navbar-brand {
+  color: var(--vino);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--texto);
+}
+
+.nav-link:hover {
+  color: var(--vino);
+  text-decoration: underline;
+}
+
+/* Presentación de la tienda */
+.presentacion {
+  padding: 55px 16px;
+  background-color: #eee3d6;
+}
+
+.presentacion h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.presentacion .lead {
+  max-width: 720px;
+  margin: 0 auto 28px;
+}
+
+.subtitulo {
+  color: var(--vino);
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+/* Botones Bootstrap personalizados */
+.btn-gourmet {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--vino);
+  --bs-btn-border-color: var(--vino);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--vino-oscuro);
+  --bs-btn-hover-border-color: var(--vino-oscuro);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--vino-oscuro);
+  --bs-btn-active-border-color: var(--vino-oscuro);
+}
+
+.btn-outline-gourmet {
+  --bs-btn-color: var(--vino);
+  --bs-btn-border-color: var(--vino);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--vino);
+  --bs-btn-hover-border-color: var(--vino);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--vino-oscuro);
+  --bs-btn-active-border-color: var(--vino-oscuro);
+}
+
+/* Tarjetas de categorías */
+.tarjeta-producto {
+  border: 1px solid #ded5ca;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.categoria-visual {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+}
+
+.vinos {
+  background-color: #ead8df;
+  color: #652c3e;
+}
+
+.quesos {
+  background-color: #f3e7bd;
+  color: #59461d;
+}
+
+.chocolates {
+  background-color: #e1cfc0;
+  color: #4b3024;
+}
+
+/* Instrucciones de compra */
+.como-comprar {
+  background-color: white;
+}
+
+.pasos-compra {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.pasos-compra li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Formulario */
+.panel-login {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: white;
+  border: 1px solid #ded5ca;
+  border-radius: 12px;
+}
+
+.form-control {
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: var(--vino);
+  box-shadow: 0 0 0 0.2rem rgba(101, 44, 62, 0.15);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--vino);
+  outline-offset: 3px;
+}
+
+/* Pie de página */
+.pie-pagina {
+  padding: 24px 16px;
+  background-color: #292522;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Ajustes para tabletas y computadores */
+@media (min-width: 768px) {
+  .presentacion {
+    padding: 85px 24px;
+  }
+
+  .presentacion h1 {
+    font-size: 3.4rem;
+  }
+
+  .panel-login {
+    padding: 40px;
+  }
+}
+
+
